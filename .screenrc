@@ -1,0 +1,9 @@
+startup_message off 
+escape "^Ta" 
+defscrollback 10000 
+shelltitle '$ |bash' 
+defhstatus "$USER@^EH_^En ^Et -- ^EW" 
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%    l]' 
+termcapinfo xterm* ti@:te@ 
+ 
+bind l windowlist
