@@ -7,19 +7,21 @@ function! GetTime()
     let str = strftime(" %Y-%m-%d %a %H:%M ")
     return str
 endfunction
- 
+
+"// encoding.
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp
+set fileformat=unix
+set fileformats=unix,dos,mac
+
 "colorscheme 256_simple 
 set backspace=indent,eol,start 
 "set cinoptions+=:0 
 set cinoptions+=g0 
 set cmdheight=1 
-set encoding=japan 
 "set noexpandtab 
 set expandtab 
-set fileencoding=japan 
-set fileencodings=iso-2022-jp,utf-8,utf-16,ucs-2-internal,ucs-2,cp932,shift-jis,euc-jp,japan 
-set fileformat=unix 
-set fileformats=unix,dos,mac 
 set helplang=ja 
 set history=50 
 set hlsearch 
@@ -49,7 +51,6 @@ set tabstop=4
 "set term=builtin_xterm 
 set term=xterm-256color 
 set t_Co=256 
-set termencoding=euc-jp 
 "set title 
 set ttymouse=xterm2 
 set updatecount=10 
