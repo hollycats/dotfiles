@@ -15,6 +15,10 @@ set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp
 set fileformat=unix
 set fileformats=unix,dos,mac
 
+"// visualization.
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
 "colorscheme 256_simple 
 set backspace=indent,eol,start 
 "set cinoptions+=:0 
@@ -28,12 +32,10 @@ set hlsearch
 set ignorecase 
 set incsearch 
 set laststatus=2 
-set listchars=tab:>-,extends:<,trail:-,eol:< 
 "set mouse=nih 
 set noautoindent 
 set nobackup 
 set nocompatible 
-set nolist 
 set nonumber 
 set number 
 set notitle 
