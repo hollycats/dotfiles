@@ -9,6 +9,11 @@ alias sn='screen'
 PROMPT='[%n@%m]%# '
 RPROMPT='[%d]'
 
+#-------- オプション--------
+## ディレクトリ名を入力するだけで移動
+setopt AUTO_CD
+cdpath=(.. ~)
+
 #-------- 環境変数 --------
 export PATH=$PATH:/usr/local/bin:$HOME/bin
 export LANG=ja_JP.UTF-8
