@@ -14,6 +14,12 @@ RPROMPT='[%d]'
 setopt AUTO_CD
 cdpath=(.. ~)
 
+## 単語区切り設定
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars " _-./;@"
+zstyle ':zle:*' word-style unspecified
+
 #-------- 環境変数 --------
 export PATH=$PATH:/usr/local/bin:$HOME/bin
 export LANG=ja_JP.UTF-8
