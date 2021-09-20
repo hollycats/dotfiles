@@ -20,3 +20,5 @@
 	st = status
 [credential]
 	helper = cache --timeout=86400
+[commit]
+	template = /Users/hollycats/.git_commit_template
